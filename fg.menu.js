@@ -419,7 +419,7 @@ Menu.prototype.drilldown = function(container, options) {
 									menu.chooseItem(this);
 								}
 								else {
-									var newLeftVal = - ($('.fg-menu-current').parents('ul').size() - 1) * 180;
+									var newLeftVal = - ($('.fg-menu-current').parents('ul').size() - 1) * options.maxHeight;
 									topList.animate({ left: newLeftVal }, options.crossSpeed, function(){
 										setPrevMenu();
 									});
